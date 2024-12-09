@@ -151,13 +151,6 @@
   </url>
   
   <url>
-    <loc>http://littledai.cn/tags/%E5%9B%BE%E8%AE%BA/</loc>
-    <lastmod>2024-12-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://littledai.cn/tags/AI/</loc>
     <lastmod>2024-12-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -173,6 +166,13 @@
   
   <url>
     <loc>http://littledai.cn/tags/%E8%BE%A9%E8%AE%BA/</loc>
+    <lastmod>2024-12-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://littledai.cn/tags/%E5%9B%BE%E8%AE%BA/</loc>
     <lastmod>2024-12-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -202,14 +202,14 @@
   </url>
   
   <url>
-    <loc>http://littledai.cn/categories/%E6%95%B0%E5%AD%A6/</loc>
+    <loc>http://littledai.cn/categories/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2024-12-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://littledai.cn/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>http://littledai.cn/categories/%E6%95%B0%E5%AD%A6/</loc>
     <lastmod>2024-12-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
