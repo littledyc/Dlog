@@ -76,17 +76,6 @@
       </tags>
   </entry>
   <entry>
-    <title>数模经历</title>
-    <url>/2025/03/16/%E6%95%B0%E6%A8%A1%E7%BB%8F%E5%8E%86/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>数学</category>
-      </categories>
-      <tags>
-        <tag>数模</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>数学和辩论</title>
     <url>/2023/10/08/%E6%95%B0%E5%AD%A6%E5%AE%B6%E5%92%8C%E8%BE%A9%E6%89%8B/</url>
     <content><![CDATA[<h2 id="数学和辩论"><a href="#数学和辩论" class="headerlink" title="数学和辩论"></a>数学和辩论</h2><p>学数学和打辩论的人都会让人觉得难以接近，前者是书呆子和钢铁直男，后者则是咄咄逼人，偷换概念的诡辩者；但偏偏今年阿里巴巴数学竞赛颁奖典礼上，举办了一场“AI能不能取代人类数学家”的辩论赛，八个平常沉默寡言的数学爱好者化身为能说会道的辩手，突然让我开始思考数学和辩论有着的千丝万缕的联系。</p>
@@ -276,6 +265,47 @@
       </categories>
       <tags>
         <tag>怀旧</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C++优化库ceres-2.2.0 cmake+vs2022编译教程</title>
+    <url>/2025/06/19/C++%E4%BC%98%E5%8C%96%E5%BA%93ceres-2.2.0%20cmake+vs2022%E7%BC%96%E8%AF%91%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<h2 id="Eigen下载编译"><a href="#Eigen下载编译" class="headerlink" title="Eigen下载编译"></a>Eigen下载编译</h2><p>@官网下载压缩包并解压<br>-<a class="link" href="https://eigen.tuxfamily.org/index.php?title=Main_Page">https://eigen.tuxfamily.org/index.php?title=Main_Page<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>下载Eigen3.4版本的zip，如图1,解压到vs项目的文件夹下，如图2<br>@添加系统环境变量<br>-将Eigen解压目录添加到系统环境变量的Path中<br>@复制FindEigen3.cmake到cmake<br>-将解压后Eigen库中FindEigen3.cmake文件复制到cmake安装目录下，如图4，图5<br>@CMake构建<br>-在在eigen文件夹下新建build文件夹用来存放编译后的文件<br>-打开cmake，选择选中eigen存放的文件夹和刚建立的build文件夹，如图1<br>-先点击configure，再点击generate，结果如图2<br>-我这里是vs 2022版本就选择visual studio 17 2022<br>@vs编译<br>-如图2，用vs打开build文件夹下的ALL_BUILD.vcxproj，或者直接在cmake中点击open project<br>-如图3，选择Release x64模式，右击ALL_BUILD点击生成解决方案，终端会提示生成成功，若生成失败，则回到下载重新下载</p>
+<h2 id="googletest下载解压"><a href="#googletest下载解压" class="headerlink" title="googletest下载解压"></a>googletest下载解压</h2><ul>
+<li>网页 <a class="link" href="https://github.com/google/googletest/releases/tag/v1.17.0">https://github.com/google/googletest/releases/tag/v1.17.0<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> 下载source code.zip，如图1<br>-解压到Ceres并改名最上层文件夹名为googletest</li>
+</ul>
+<h2 id="abseil下载解压"><a href="#abseil下载解压" class="headerlink" title="abseil下载解压"></a>abseil下载解压</h2><ul>
+<li><a class="link" href="https://github.com/abseil/abseil-cpp/releases/tag/20250512.0">https://github.com/abseil/abseil-cpp/releases/tag/20250512.0<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> 下载source code.zip，如图1<br>-解压到Ceres并改名最上层文件夹名为abseil-cpp</li>
+</ul>
+<h2 id="gflags下载编译"><a href="#gflags下载编译" class="headerlink" title="gflags下载编译"></a>gflags下载编译</h2><p>@gflags下载-源码地址 <a class="link" href="https://github.com/gflags/gflags/releases/tag/v2.2.2">https://github.com/gflags/gflags/releases/tag/v2.2.2<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> 下载source code.zip，并解压到Ceres文件夹<br>@配置编译<br>-打开cmake，选择gflags文件夹和对应build文件夹，点击configure，勾选 BUILD_SHARED_LIBS 生成 lib 文件，再点击configure消红<br>-点击generate，再点击open project，在vs中右击ALL_BUILD点击生成解决方案</p>
+<h2 id="glog下载编译"><a href="#glog下载编译" class="headerlink" title="glog下载编译"></a>glog下载编译</h2><p>@glog下载<br>-源码地址 <a class="link" href="https://github.com/google/glog/releases/tag/v0.7.1">https://github.com/google/glog/releases/tag/v0.7.1<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> 下载source code.zip，并解压到Ceres文件夹<br>@配置编译<br>-打开cmake，选择glog文件夹和对应build文件夹，点击configure，勾选 BUILD_SHARED_LIBS 生成 lib 文件，gflags_DIR 为 gflags-build 路径，再次 Configure 消红然后 Generate，成功后打开 VS 工程<br>-在vs中右击ALL_BUILD点击生成解决方案</p>
+<h2 id="ceres-2-2-0下载编译"><a href="#ceres-2-2-0下载编译" class="headerlink" title="ceres-2.2.0下载编译"></a>ceres-2.2.0下载编译</h2><p>@ceres-2.2.0下载<br>-使用git clone <a class="link" href="https://github.com/ceres-solver/ceres-solver.git">https://github.com/ceres-solver/ceres-solver.git<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> 或者在官网 <a class="link" href="https://github.com/ceres-solver/ceres-solver/releases/tag/2.2.0">https://github.com/ceres-solver/ceres-solver/releases/tag/2.2.0<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> 上下载source code再解压到ceres-solver下，如图1</p>
+<p>@将googletest和abseil放入ceres中<br>-将上面下载解压好的googletest文件夹和abseil-cpp文件夹复制到 本地目录&#x2F;ceres-solver&#x2F;third_party文件夹下，如图3（这里如果用解压source code的方法没有third_party文件夹就自己新建一个）</p>
+<p>@配置编译ceres<br>-选择文件夹：打开cmake，选择选中ceres存放的文件夹和建立的ceres-build文件夹，如图4<br>-配置Eigen3路径：先点击configure，会cmake error，显示找不到eigen库，结果如图5，解决方案是把eigen&#x2F;build的路径赋给Eigen3_DIR，并把eigen文件夹的路径赋给Eigen3_INCLUDE_DIR<br>-配置glog和gflags路径：再点configure，还是cmake error，出现新的红色提示，缺少glog和gflags的路径，这里把路径的对应关系为gflags_DIR对应gflags-build，glog_DIR对应glog-build，glog_INCLUDE_DIR对应glog-build&#x2F;glog，并勾选上GFLAGS，如图7<br>-配置SuiteSparse路径（暂未完成非必需）：SuiteSparse路径较多，SuiteSparse_DIR，如图8<br>-选择编译模式：再点击configure之后只剩一个红色提示，选择Release模式，如图10<br>-生成编译：再次点击configure发现红色提示都消失，点击generate，再点击open project进入vs，如图12，右击ALL_BUILD点击生成解决方案，终端会提示生成成功（生成时间较长），若生成失败，则要仔细检查以上每步，重新再来一遍</p>
+<h2 id="vs项目路径配置"><a href="#vs项目路径配置" class="headerlink" title="vs项目路径配置"></a>vs项目路径配置</h2><p>@找到ceres库生成路径<br>-在cmake编译的时候设置install目录即为vs工程包含目录和库目录所在位置，如图1，打开ceres文件夹如图2<br>@包含目录设置<br>-将eigen目录和图二中的ceres&#x2F;include设置进包含目录<br>@库目录设置<br>-将图二中ceres&#x2F;lib设置进库目录<br>@链接器设置<br>-要链接的是库目录中所有lib文件，这里要链接的lib文件较多，部分截图如图5</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>奉贤</title>
+    <url>/2025/06/19/%E5%A5%89%E8%B4%A4/</url>
+    <content><![CDATA[<h2 id="海"><a href="#海" class="headerlink" title="海"></a>海</h2><p>奉贤的海湾算不上真正的海，但是又有沙滩，浪花和渔船，<br>海风</p>
+<h2 id="天空"><a href="#天空" class="headerlink" title="天空"></a>天空</h2>]]></content>
+  </entry>
+  <entry>
+    <title>数模国赛</title>
+    <url>/2024/12/19/%E6%95%B0%E6%A8%A1%E5%9B%BD%E8%B5%9B/</url>
+    <content><![CDATA[<h2 id="Day0"><a href="#Day0" class="headerlink" title="Day0"></a>Day0</h2><h2 id="Day1"><a href="#Day1" class="headerlink" title="Day1"></a>Day1</h2><h2 id="Day2"><a href="#Day2" class="headerlink" title="Day2"></a>Day2</h2><h2 id="Day3"><a href="#Day3" class="headerlink" title="Day3"></a>Day3</h2><h2 id="Day4"><a href="#Day4" class="headerlink" title="Day4"></a>Day4</h2>]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>数模</tag>
       </tags>
   </entry>
 </search>
