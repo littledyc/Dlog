@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://littledai.cn/2024/12/19/%E6%95%B0%E6%A8%A1%E5%9B%BD%E8%B5%9B/</loc>
-    <lastmod>2025-06-19</lastmod>
-  </url>
-  <url>
     <loc>http://littledai.cn/2025/06/19/%E5%A5%89%E8%B4%A4/</loc>
     <lastmod>2025-06-19</lastmod>
   </url>
@@ -14,7 +10,11 @@
   </url>
   <url>
     <loc>http://littledai.cn/2023/12/06/%E5%A4%A7%E5%88%9B/</loc>
-    <lastmod>2025-03-16</lastmod>
+    <lastmod>2025-06-19</lastmod>
+  </url>
+  <url>
+    <loc>http://littledai.cn/2024/12/19/%E6%95%B0%E6%A8%A1%E5%9B%BD%E8%B5%9B/</loc>
+    <lastmod>2025-06-19</lastmod>
   </url>
   <url>
     <loc>http://littledai.cn/2023/12/04/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</loc>
