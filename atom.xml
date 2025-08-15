@@ -6,7 +6,7 @@
   <link href="http://littledai.cn/atom.xml" rel="self"/>
   
   <link href="http://littledai.cn/"/>
-  <updated>2025-06-19T07:34:23.058Z</updated>
+  <updated>2025-08-13T11:00:36.546Z</updated>
   <id>http://littledai.cn/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>你是什么时候觉得自己可以改变世界的</title>
+    <link href="http://littledai.cn/2025/08/13/%E4%BD%A0%E6%98%AF%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E8%A7%89%E5%BE%97%E8%87%AA%E5%B7%B1%E5%8F%AF%E4%BB%A5%E6%94%B9%E5%8F%98%E4%B8%96%E7%95%8C%E7%9A%84/"/>
+    <id>http://littledai.cn/2025/08/13/%E4%BD%A0%E6%98%AF%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E8%A7%89%E5%BE%97%E8%87%AA%E5%B7%B1%E5%8F%AF%E4%BB%A5%E6%94%B9%E5%8F%98%E4%B8%96%E7%95%8C%E7%9A%84/</id>
+    <published>2025-08-13T11:00:36.000Z</published>
+    <updated>2025-08-13T11:00:36.546Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>C++优化库ceres-2.2.0 cmake+vs2022编译教程</title>
@@ -99,9 +112,9 @@
     <link href="http://littledai.cn/2024/12/19/%E6%95%B0%E6%A8%A1%E5%9B%BD%E8%B5%9B/"/>
     <id>http://littledai.cn/2024/12/19/%E6%95%B0%E6%A8%A1%E5%9B%BD%E8%B5%9B/</id>
     <published>2024-12-19T07:07:49.000Z</published>
-    <updated>2025-08-13T02:03:30.658Z</updated>
+    <updated>2025-08-13T02:20:53.846Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Day0"><a href="#Day0" class="headerlink" title="Day0"></a>Day0</h2><p><figure class="image-caption"><img lazyload src="/images/loading.svg" data-src="/%E6%95%B0%E6%A8%A1%E5%9B%BD%E8%B5%9B/image.png" alt="alt text"><figcaption>alt text</figcaption></figure><br><figure class="image-caption"><img lazyload src="/images/loading.svg" data-src="/%E6%95%B0%E6%A8%A1%E5%9B%BD%E8%B5%9B/image-1.png" alt="alt text"><figcaption>alt text</figcaption></figure></p><h2 id="Day1"><a href="#Day1" class="headerlink" title="Day1"></a>Day1</h2><h2 id="Day2"><a href="#Day2" class="headerlink" title="Day2"></a>Day2</h2><h2 id="Day3"><a href="#Day3" class="headerlink" title="Day3"></a>Day3</h2><p><figure class="image-caption"><img lazyload src="/images/loading.svg" data-src="/%E6%95%B0%E6%A8%A1%E5%9B%BD%E8%B5%9B/image-2.png" alt="alt text"><figcaption>alt text</figcaption></figure></p><h2 id="Day4"><a href="#Day4" class="headerlink" title="Day4"></a>Day4</h2><p><figure class="image-caption"><img lazyload src="/images/loading.svg" data-src="/%E6%95%B0%E6%A8%A1%E5%9B%BD%E8%B5%9B/image-3.png" alt="alt text"><figcaption>alt text</figcaption></figure><figure class="image-caption"><img lazyload src="/images/loading.svg" data-src="/%E6%95%B0%E6%A8%A1%E5%9B%BD%E8%B5%9B/image-4.png" alt="alt text"><figcaption>alt text</figcaption></figure></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="Day0"><a href="#Day0" class="headerlink" title="Day0"></a>Day0</h2><p><figure class="image-caption"><img lazyload src="/images/loading.svg" data-src="/%E6%95%B0%E6%A8%A1%E5%9B%BD%E8%B5%9B/image.png" alt="alt text"><figcaption>alt text</figcaption></figure><br><figure class="image-caption"><img lazyload src="/images/loading.svg" data-src="/%E6%95%B0%E6%A8%A1%E5%9B%BD%E8%B5%9B/image-1.png" alt="alt text"><figcaption>alt text</figcaption></figure></p><h2 id="Day1"><a href="#Day1" class="headerlink" title="Day1"></a>Day1</h2><h2 id="Day2"><a href="#Day2" class="headerlink" title="Day2"></a>Day2</h2><h2 id="Day3"><a href="#Day3" class="headerlink" title="Day3"></a>Day3</h2><p><figure class="image-caption"><img lazyload src="/images/loading.svg" data-src="/image-2.png" alt="alt text"><figcaption>alt text</figcaption></figure></p><h2 id="Day4"><a href="#Day4" class="headerlink" title="Day4"></a>Day4</h2><p><figure class="image-caption"><img lazyload src="/images/loading.svg" data-src="/images/Math/image-3.png" alt="alt text"><figcaption>alt text</figcaption></figure><br><figure class="image-caption"><img lazyload src="/images/loading.svg" data-src="/images/Math/image-4.png" alt="alt text"><figcaption>alt text</figcaption></figure></p>]]></content>
     
     
     <summary type="html">false</summary>
