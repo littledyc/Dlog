@@ -11,15 +11,6 @@
   </url>
   
   <url>
-    <loc>http://littledai.cn/2025/08/16/optimization-based_terrain_generation/</loc>
-    
-    <lastmod>2025-08-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://littledai.cn/2023/11/30/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E6%B5%8B%E8%AF%84%E5%8F%8A%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</loc>
     
     <lastmod>2025-08-16</lastmod>
@@ -226,7 +217,7 @@
 
   
   <url>
-    <loc>http://littledai.cn/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>http://littledai.cn/categories/%E6%9D%82%E6%96%87/</loc>
     <lastmod>2025-11-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -240,7 +231,7 @@
   </url>
   
   <url>
-    <loc>http://littledai.cn/categories/%E6%9D%82%E6%96%87/</loc>
+    <loc>http://littledai.cn/categories/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2025-11-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
