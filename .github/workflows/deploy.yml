@@ -1,0 +1,39 @@
+name: Deploy Blog
+
+on:
+  push:
+    branches: [source]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Inject secrets into config
+        run: |
+          sed -i "s/BAIDU_TOKEN_PLACEHOLDER/${{ secrets.BAIDU_TOKEN }}/" _config.yml
+          sed -i "s/GITALK_CLIENT_SECRET_PLACEHOLDER/${{ secrets.GITALK_CLIENT_SECRET }}/" _config.redefine.yml
+
+      - name: Generate static site
+        run: npx hexo generate
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: main
+          publish_dir: ./public
+          force_orphan: true
+          cname: littledai.cn

@@ -1,0 +1,19 @@
+- category:  Chat AI # 工具分类名称
+  icon: fa-robot # 工具分类的图标
+  items:
+    - name: ChatGPT
+      link: https://chat.openai.com # 书签链接地址
+      description: OpenAI 的 AI 对话助手
+      image: https://chat.openai.com/favicon.ico # 网站图标地址
+    - name: Claude
+      link: https://www.anthropic.com/
+      description: Anthropic 的 AI 对话助手
+      image: https://www.anthropic.com/favicon.ico
+
+- category:  VPN # 工具分类名称
+  icon: fa-water-ladder # 工具分类的图标
+  items: 
+    - name: 迷雾通
+      link: https://f001.backblazeb2.com/file/geph4-dl/geph-releases/dl.html
+      description: 我最常用的翻墙软件
+      image: https://littledai.oss-cn-shanghai.aliyuncs.com/geph.ico

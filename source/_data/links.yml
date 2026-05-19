@@ -1,0 +1,20 @@
+- links_category: "主题作者"
+  has_thumbnail: false
+  list:
+      - name: EvanNotFound's Blog
+        link: https://ohevan.com
+        description: redefine主题作者
+        avatar: https://evan.beee.top/avatar.png
+        thumbnail: 
+ 
+- links_category: "个人博客"
+  has_thumbnail: false
+  list:
+      - name: Randy's Blog
+        link: https://lutaonan.com/
+        description: Randy's personal blog
+        avatar: 
+      - name: Ursb's Blog
+        link: https://blog.ursb.me/
+        description: Ursb's personal blog
+        avatar: https://blog.ursb.me/avatar.png
