@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
+        with:
+          submodules: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -43,3 +45,16 @@ jobs:
           publish_dir: ./public
           force_orphan: true
           cname: littledai.cn
+
+      - name: Submit URLs to Baidu
+        run: npx hexo-baidu-url-submit
+
+      - name: Submit URLs via IndexNow (Bing + Yandex)
+        run: |
+          INDEXNOW_KEY="${{ secrets.INDEXNOW_KEY }}"
+          if [ -f baidu_urls.txt ]; then
+            URLS=$(head -100 baidu_urls.txt | jq -R -s -c 'split("\n") | map(select(length > 0))')
+            curl -s -X POST "https://api.indexnow.org/indexnow" \
+              -H "Content-Type: application/json" \
+              -d "{\"host\": \"littledai.cn\", \"key\": \"$INDEXNOW_KEY\", \"keyLocation\": \"https://littledai.cn/$INDEXNOW_KEY.txt\", \"urlList\": $URLS}"
+          fi

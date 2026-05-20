@@ -374,7 +374,7 @@ comment:
     # Gitalk comment system. See https://github.com/gitalk/gitalk
     gitalk:
       clientID: Ov23lidiNtFAUo72MI1V # GitHub Application Client ID
-      clientSecret: GITALK_CLIENT_SECRET_PLACEHOLDER # 在 GitHub Actions 中自动替换，本地请改为真实 secret
+      clientSecret: GITALK_CLIENT_SECRET_PLACEHOLDER # GitHub Application Client Secret（Actions 中由 secret 替换）
       repo: Gitalk # GitHub repository
       owner: littledyc # GitHub repository owner
       proxy: # GitHub repository proxy

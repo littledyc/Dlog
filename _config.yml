@@ -164,10 +164,17 @@ mathjax:
 baidu_url_submit:
   count: 10               # �ύ���µĶ��ٸ�����
   host: littledai.cn    # �ڰٶ�վ��ƽ̨�����ӵ�����
-  token: BAIDU_TOKEN_PLACEHOLDER      # 在 GitHub Actions 中自动替换，本地请改为真实 token
+  token: BAIDU_TOKEN_PLACEHOLDER      # 密钥（Actions 中由 secret 替换）
   path: baidu_urls.txt   # �ı��ĵ��ĵ�ַ�� �����ӻᱣ���ڴ��ı��ĵ���
 
-#����RSS
+# 站点地图
+sitemap:
+  path: sitemap.xml
+  rel: true
+  tags: true
+  categories: true
+
+# RSS订阅
 feed:
   type: atom
   path: atom.xml

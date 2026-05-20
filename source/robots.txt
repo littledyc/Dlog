@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://littledai.cn/sitemap.xml
+Sitemap: https://littledai.cn/baidusitemap.xml
