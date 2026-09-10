@@ -67,9 +67,9 @@
     <link href="http://littledai.cn/2026/08/24/HTML%E5%86%99%E4%BD%9C%E6%B5%8B%E8%AF%95/"/>
     <id>http://littledai.cn/2026/08/24/HTML%E5%86%99%E4%BD%9C%E6%B5%8B%E8%AF%95/</id>
     <published>2026-08-24T07:00:00.000Z</published>
-    <updated>2026-08-24T06:02:08.948Z</updated>
+    <updated>2026-09-10T06:23:56.047Z</updated>
     
-    <content type="html"><![CDATA[<article>  <p>这是一篇用 <strong>HTML 直接书写</strong>的文章。写完后删除本文件即可。</p>  <h2>怎么写</h2>  <ul>    <li>在 <code>source/_posts/</code> 下新建 <code>xxx.html</code>（扩展名必须是 .html）</li>    <li>顶部保留 YAML front-matter：<code>title</code>、<code>date</code>、<code>categories</code>、<code>tags</code></li>    <li>正文就是语义化 HTML，主题的排版样式会自动套用</li>  </ul>  <h2>验证点</h2>  <p>以下内容若正常显示，说明透传生效：</p>  <ol>    <li>特殊字符 &lt;script&gt;alert(1)&lt;/script&gt; 按原文显示</li>    <li>URL：<a class="link"   href="https://github.com/littledyc" >github.com/littledyc<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>    <li>代码块：</li>  </ol>  <pre><code>const anything = "原样输出";</code></pre></article>]]></content>
+    <content type="html"><![CDATA[<article>  <p>这是一篇用 <strong>HTML 直接书写</strong>的文章。写完后删除本文件即可。</p>  <h2>怎么写</h2>  <ul>    <li>在 <code>src/_posts/</code> 下新建 <code>xxx.html</code>（扩展名必须是 .html）</li>    <li>顶部保留 YAML front-matter：<code>title</code>、<code>date</code>、<code>categories</code>、<code>tags</code></li>    <li>正文就是语义化 HTML，主题的排版样式会自动套用</li>  </ul>  <h2>验证点</h2>  <p>以下内容若正常显示，说明透传生效：</p>  <ol>    <li>特殊字符 &lt;script&gt;alert(1)&lt;/script&gt; 按原文显示</li>    <li>URL：<a class="link"   href="https://github.com/littledyc" >github.com/littledyc<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>    <li>代码块：</li>  </ol>  <pre><code>const anything = "原样输出";</code></pre></article>]]></content>
     
     
     <summary type="html">false</summary>
