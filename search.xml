@@ -1,154 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>HTML 写作测试</title>
-    <url>/2026/08/24/HTML%E5%86%99%E4%BD%9C%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[
-<article>
-  <p>这是一篇用 <strong>HTML 直接书写</strong>的文章。写完后删除本文件即可。</p>
-
-  <h2>怎么写</h2>
-  <ul>
-    <li>在 <code>src/_posts/</code> 下新建 <code>xxx.html</code>（扩展名必须是 .html）</li>
-    <li>顶部保留 YAML front-matter：<code>title</code>、<code>date</code>、<code>categories</code>、<code>tags</code></li>
-    <li>正文就是语义化 HTML，主题的排版样式会自动套用</li>
-  </ul>
-
-  <h2>验证点</h2>
-  <p>以下内容若正常显示，说明透传生效：</p>
-  <ol>
-    <li>特殊字符 &lt;script&gt;alert(1)&lt;/script&gt; 按原文显示</li>
-    <li>URL：<a class="link"   href="https://github.com/littledyc" >github.com/littledyc<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
-    <li>代码块：</li>
-  </ol>
-  <pre><code>const anything = "原样输出";</code></pre>
-</article>
-]]></content>
-      <categories>
-        <category>杂文</category>
-      </categories>
-      <tags>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML 能力演示（列表 / 表格 / 折叠 / 画图）</title>
-    <url>/2026/08/24/HTML%E8%83%BD%E5%8A%9B%E6%BC%94%E7%A4%BA/</url>
-    <content><![CDATA[
-<article>
-  <p>这篇文章演示 <strong>HTML 相对 Markdown 多出来的能力</strong>在博客上是否可用。以下每节都是实测项。</p>
-
-  <style>
-    /* 本文章自带排版（AGENTS.md 原则：不用内联样式，用选择器） */
-    .html-demo figure {
-      margin: 1.5em 0;
-    }
-    .html-demo figcaption {
-      text-align: center;
-      color: var(--redefine-text-muted, #888);
-      font-size: 0.9em;
-    }
-    .html-demo table.math-table {
-      border-collapse: collapse;
-    }
-  </style>
-
-  <h2>一、原生列表（比 markdown 的嵌套更自由）</h2>
-  <ol>
-    <li>一级
-      <ul>
-        <li>二级 a<ul><li>三级 i</li><li>三级 ii</li></ul></li>
-        <li>二级 b</li>
-      </ul>
-    </li>
-    <li>自定义起始值：<ol start="10"><li>从 10 开始</li><li>11</li></ol></li>
-  </ol>
-  <dl>
-    <dt>定义列表（markdown 没有）</dt>
-    <dd>可以用 dt/dd 写术语释义，主题已配好排版。</dd>
-  </dl>
-
-  <h2>二、表格（可控制宽度、换行、合并）</h2>
-  <table>
-    <thead>
-      <tr><th>能力</th><th>markdown</th><th>html</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>单元格换行</td><td>✗</td><td>&lt;br&gt; 随意</td></tr>
-      <tr><td>行列合并</td><td>✗</td><td>colspan / rowspan ✓</td></tr>
-      <tr><td>单元格内元素</td><td>✗</td><td>&lt;img&gt; &lt;input&gt; &lt;details&gt; 任意</td></tr>
-    </tbody>
-  </table>
-
-  <h2>三、原声折叠 / 交互（无需插件的收放）</h2>
-  <details>
-    <summary>点击展开：这不是 JS 短代码，是原生 details 元素</summary>
-    <p>原生折叠面板，搜索无障碍性好，任何 md 文章做不到。</p>
-  </details>
-
-  <h2>四、画图 1：内联 SVG（矢量图，可手绘）</h2>
-  <figure>
-    <svg viewBox="0 0 420 120" width="100%" role="img" aria-label="简单流程图">
-      <rect x="10" y="35" width="90" height="50" rx="8" fill="var(--bg-card, #f5f5f5)" stroke="currentColor" stroke-width="1.5"/>
-      <text x="55" y="65" text-anchor="middle">写 HTML</text>
-      <line x1="100" y1="60" x2="150" y2="60" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow)"/>
-      <rect x="150" y="35" width="90" height="50" rx="8" fill="var(--bg-card, #f5f5f5)" stroke="currentColor" stroke-width="1.5"/>
-      <text x="195" y="65" text-anchor="middle">生成静态站</text>
-      <line x1="240" y1="60" x2="290" y2="60" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow)"/>
-      <rect x="290" y="35" width="90" height="50" rx="8" fill="var(--bg-card, #f5f5f5)" stroke="currentColor" stroke-width="1.5"/>
-      <text x="335" y="65" text-anchor="middle">发布上线</text>
-      <defs>
-        <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
-          <path d="M0,0 L8,4 L0,8 z" fill="currentColor"/>
-        </marker>
-      </defs>
-    </svg>
-    <figcaption>纯手写 SVG，随主题深浅色自动适配</figcaption>
-  </figure>
-
-  <h2>五、画图 2：Mermaid（文字描述自动出图）</h2>
-  <p>正文里写 <code>&lt;pre class="mermaid"&gt;</code>，主题加载的 mermaid.js 在浏览器里渲染成图：</p>
-  <pre class="mermaid">
-flowchart TD
-    A[知识输入] --> B{内容类型}
-    B -->|工程| C[engineering]
-    B -->|产品| D[product]
-    B -->|未分类| E[todo]
-    C --> F[(思维宫殿 index.html)]
-    D --> F
-    E --> F
-  </pre>
-
-  <h2>六、画图 3：Canvas（可交互图表）</h2>
-  <p>甚至可以在文章里内联一段小脚本自绘图表：</p>
-  <figure>
-    <canvas id="demo-bars" width="300" height="120" role="img" aria-label="示例柱状图"></canvas>
-    <figcaption>原生 canvas 手绘柱状图</figcaption>
-  </figure>
-  <script>
-    (function () {
-      const c = document.getElementById("demo-bars");
-      if (!c || !c.getContext) return;
-      const ctx = c.getContext("2d");
-      const data = [30, 55, 42, 70, 60];
-      const barW = 40, gap = 16;
-      data.forEach((v, i) => {
-        const h = v;
-        ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--redefine-violet") || "#7c3aed";
-        ctx.fillRect(20 + i * (barW + gap), 110 - h, barW, h);
-      });
-    })();
-  </script>
-</article>
-]]></content>
-      <categories>
-        <category>杂文</category>
-      </categories>
-      <tags>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>你是什么时候觉得自己可以改变世界的</title>
     <url>/2025/08/13/%E4%BD%A0%E6%98%AF%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E8%A7%89%E5%BE%97%E8%87%AA%E5%B7%B1%E5%8F%AF%E4%BB%A5%E6%94%B9%E5%8F%98%E4%B8%96%E7%95%8C%E7%9A%84/</url>
     <content><![CDATA[]]></content>
@@ -176,147 +28,6 @@ flowchart TD
       <categories>
         <category>旅行</category>
       </categories>
-  </entry>
-  <entry>
-    <title>我的 Hexo 博客性能与架构复盘：从“能发布”到“可持续演进”</title>
-    <url>/2026/09/10/%E5%8D%9A%E5%AE%A2%E6%80%A7%E8%83%BD%E4%B8%8E%E6%9E%B6%E6%9E%84%E5%A4%8D%E7%9B%98/</url>
-    <content><![CDATA[
-<article>
-  <p>最近我重新检查了这个博客的源码、主题配置、构建产物和发布流程。它已经能够稳定生成静态页面并发布到 GitHub Pages，但“能访问”和“长期可维护”之间仍然有一段距离。本文记录这次检查的基线、问题优先级，以及后续可以执行的优化路线。</p>
-
-  <p>先说明检查边界：下面的数字主要来自本地构建产物和源码扫描，不等同于某个具体设备上的真实网络传输量。真正的优化结果还需要用 Lighthouse、浏览器 Performance 面板和真实用户数据验证。</p>
-
-  <h2>一、现在的博客是什么架构</h2>
-
-  <p>当前系统可以拆成三个部分：</p>
-
-  <ul>
-    <li>源码层：Hexo 配置、文章、主题和插件。</li>
-    <li>构建层：Hexo 将源码转换成静态 HTML、CSS、JavaScript 和图片。</li>
-    <li>发布层：生成的 <code>public</code> 内容被推送到 <a class="link"   href="https://github.com/littledyc/Dlog" >Dlog<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> 仓库，再由 GitHub Pages 对外提供访问。</li>
-  </ul>
-
-  <p>这套方案最大的优点是运行时没有数据库和后端服务，故障面小、成本低、缓存友好。需要继续完善的地方是边界管理：源码仓库、生成仓库、Wiki 和第三方服务之间的关系需要更明确，发布过程也应该只有一个可信入口。</p>
-
-  <h2>二、构建产物给出的性能基线</h2>
-
-  <table>
-    <thead>
-      <tr><th>项目</th><th>当前观测</th><th>说明</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>生成文件</td><td>约 297 个</td><td>包含页面、脚本、样式、字体和图片</td></tr>
-      <tr><td>生成目录大小</td><td>约 35.1 MB</td><td>包含约 12.1 MB 的 source map</td></tr>
-      <tr><td>Service Worker 预缓存</td><td>243 个资源，约 21.6 MB</td><td>首次安装离线缓存的成本偏高</td></tr>
-      <tr><td>Mermaid</td><td>约 2.57 MB</td><td>当前只有一篇文章实际使用，却被全站加载</td></tr>
-      <tr><td>图片</td><td>167 个 <code>img</code> 标签</td><td>没有使用原生 <code>loading</code> 属性</td></tr>
-      <tr><td>重复资源</td><td>存在多份相同库文件</td><td>Mermaid、Moment、Waline、APlayer 都出现重复构建产物</td></tr>
-    </tbody>
-  </table>
-
-  <p>这些数字说明：页面内容本身不是主要矛盾，资源加载策略才是重点。尤其是全站公共脚本、字体、第三方 CDN 和离线缓存，它们会把一个简单的静态博客变成一组较大的前端运行时。</p>
-
-  <h2>三、优先级最高的优化项</h2>
-
-  <h3>1. 先处理配置中的安全边界</h3>
-
-  <p>检查时发现，部分第三方服务配置曾直接出现在版本库配置文件中，包括百度站长推送凭据和评论系统的敏感字段。无论这些字段是否仍然有效，都不应该继续把它们当作普通配置提交。</p>
-
-  <p>建议立即轮换已经暴露过的凭据，并改成环境变量或 GitHub Actions Secrets。配置文件只保留服务开关、公开 ID 和非敏感参数。安全问题的优先级高于所有性能优化，因为一个被滥用的 token 会让整个发布链路承担不必要的风险。</p>
-
-  <h3>2. 统一使用 HTTPS 和正确的站点元数据</h3>
-
-  <p>当前站点基础配置仍有 HTTP 地址，生成的 canonical、Open Graph 和 sitemap 也会继承这个地址。正式域名应该统一为 <code>https://littledai.cn</code>，并确认 DNS、GitHub Pages 自定义域名和 HTTPS 强制跳转都已生效。</p>
-
-  <p>同时应把默认的站点标题、作者、描述和主题链接改成真实信息。它们虽然不直接改变首屏速度，却会影响搜索摘要、社交分享卡片和站点可信度。</p>
-
-  <h3>3. 不要让 Mermaid 这种大库全站加载</h3>
-
-  <p>Mermaid 当前约 2.57 MB，而且同一库在生成目录中出现了两份。源码扫描显示，只有 HTML 能力演示文章使用了 Mermaid。更合理的做法是按页面加载：</p>
-
-  <ul>
-    <li>只有检测到 Mermaid 容器的文章才动态导入 Mermaid。</li>
-    <li>或者在 Hexo 构建阶段给使用 Mermaid 的页面加标记，由模板按标记输出脚本。</li>
-    <li>删除主题开发构建和正式构建之间重复的库目录。</li>
-  </ul>
-
-  <p>这类调整通常比单纯压缩代码更有效，因为它减少的是不需要下载的资源，而不是只减少已经下载资源的几个百分点。</p>
-
-  <h3>4. 重新设计 Service Worker 的缓存范围</h3>
-
-  <p>现在的 Service Worker 预缓存了约 21.6 MB、243 个资源，其中包含较大的脚本、字体和页面。这样做离线体验看起来完整，但首次安装成本很高，也容易把旧版本内容长期留在用户设备中。</p>
-
-  <p>建议只预缓存离线首页所需的最小应用壳，文章 HTML 和图片采用运行时缓存，第三方资源默认不进入预缓存。还要定义版本更新和旧缓存清理策略。发布脚本在生成后处理 README 的过程中，也要同步考虑 Service Worker 清单，避免清单仍然引用已经删除的 <code>README.html</code>。</p>
-
-  <h2>四、前端资源还可以怎样减重</h2>
-
-  <h3>图片：把“懒加载”做成浏览器能理解的形式</h3>
-
-  <p>主题目前主要依赖自定义的 <code>lazyload</code> 属性和 JavaScript 观察器，没有给图片输出原生 <code>loading="lazy"</code> 与 <code>decoding="async"</code>。建议给文章正文图片统一补充：</p>
-
-  <pre><code>&lt;img src="image.webp"
-     alt="有意义的图片说明"
-     width="1200"
-     height="800"
-     loading="lazy"
-     decoding="async"&gt;</code></pre>
-
-  <p>宽高用于提前保留布局空间，减少 CLS；首屏主视觉则应该使用 <code>loading="eager"</code> 或适当的优先级。对同一张图片提供 WebP 或 AVIF，并用 <code>picture</code> 根据屏幕尺寸选择资源，通常能同时改善 LCP 和流量。</p>
-
-  <h3>脚本：从“全站大入口”改成按功能加载</h3>
-
-  <p>主题的主入口会导入懒加载、Mermaid、瀑布流、播放器、本地搜索和页面切换等多个模块。即使最终部分功能没有在当前页面启用，入口本身仍然承担了统一初始化的成本。</p>
-
-  <p>可以按照页面功能拆分入口：文章页只加载文章需要的功能，搜索打开时再加载搜索索引，播放器被使用时再加载 APlayer，图表页面再加载 Mermaid。Moment 的完整 locale 包也可以评估是否改用浏览器原生的 <code>Intl.DateTimeFormat</code>，减少一份全语言包。</p>
-
-  <h3>字体和图标：只发布实际使用的部分</h3>
-
-  <p>当前产物包含多种字体格式和较大的 Font Awesome 文件。现代浏览器场景下可以优先保留 WOFF2，删除不再需要的 EOT、TTF 等回退格式，并将图标改成按需引入的 SVG。字体文件还应限制字重和字符集，避免为了少量图标传输整套字体。</p>
-
-  <h3>第三方依赖：性能和可用性要一起评估</h3>
-
-  <p>首页会请求统计、访问计数、Google 服务、主题 CDN、评论、播放器和多个外部脚本。第三方请求不只影响性能，也会引入 DNS、TLS、跨境网络和服务商故障等变量。</p>
-
-  <p>建议按价值排序：不需要的统计和播放器直接关闭；关键脚本尽可能自托管；非关键统计使用 <code>defer</code> 或在页面交互后加载；外部服务增加超时、降级和隐私说明。一个静态博客不应该因为某个计数器不可用而阻塞正文阅读。</p>
-
-  <h2>五、发布架构应该怎样演进</h2>
-
-  <p>现在的生成仓库 Dlog 只保存发布后的静态文件，这个方向是可以保留的，但需要明确“源码仓库负责什么、发布仓库负责什么”。建议采用下面的边界：</p>
-
-  <ul>
-    <li>源码仓库：文章、主题、配置、依赖锁文件、部署脚本和架构文档。</li>
-    <li>构建流程：安装锁定版本依赖，执行构建、链接检查、敏感信息检查和可选的 Lighthouse 检查。</li>
-    <li>发布仓库：只接收构建后的静态文件，不手工编辑。</li>
-    <li>Wiki：如果它属于博客知识库，应明确是独立站点还是构建输入；不要让它处于“存在但不会随博客发布”的灰色状态。</li>
-  </ul>
-
-  <p>发布操作应该只有一个入口，例如 <code>npm run deploy</code>。脚本需要在构建失败时立即停止，检查生成目录是否包含首页、CNAME 和 README，最后检查 push 的退出码。这样可以避免“本地看起来成功，但远端其实没有更新”的误判。</p>
-
-  <h2>六、推荐的实施顺序</h2>
-
-  <ol>
-    <li><strong>第一阶段：安全和正确性。</strong>轮换敏感凭据，改 HTTPS，修正标题、描述、canonical 和主题链接，确认发布脚本的失败状态可见。</li>
-    <li><strong>第二阶段：立刻减小首屏负担。</strong>关闭不使用的全局插件，Mermaid/APlayer/评论/统计按需加载，给图片补充尺寸和原生懒加载。</li>
-    <li><strong>第三阶段：清理构建产物。</strong>消除重复库文件，限制字体格式和 Font Awesome 子集，生产发布时不携带 source map。</li>
-    <li><strong>第四阶段：收紧离线缓存。</strong>缩小 Service Worker 预缓存范围，增加缓存版本和清理机制，验证新旧版本升级。</li>
-    <li><strong>第五阶段：建立持续验证。</strong>每次发布前自动执行构建、链接检查、HTML 关键字段检查，并定期记录移动端 LCP、INP、CLS 和总传输量。</li>
-  </ol>
-
-  <h2>结语</h2>
-
-  <p>这个博客已经具备静态站点的可靠基础：构建简单、运行成本低、部署目标清晰。下一步不需要大规模重写 Hexo，而是要把资源加载从“主题默认全量启用”调整为“页面按需启用”，把发布从“手工操作”调整为“可重复脚本”，再用真实用户指标验证每次改动。</p>
-
-  <p>如果只做三件事，我会选择：先轮换配置中的敏感凭据；再让 Mermaid、播放器和第三方服务按需加载；最后把 Service Worker 预缓存从 21.6 MB 降到一个明确且可解释的范围。这三项分别改善安全性、首屏性能和长期可维护性。</p>
-</article>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>性能优化</tag>
-        <tag>架构</tag>
-        <tag>Hexo</tag>
-      </tags>
   </entry>
   <entry>
     <title>在短视频时代写博客</title>
@@ -667,6 +378,73 @@ flowchart TD
       </categories>
       <tags>
         <tag>图论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>免费额度指南：Agent 产品与 API 渠道调研</title>
+    <url>/2026/10/11/%E5%85%8D%E8%B4%B9%E9%A2%9D%E5%BA%A6%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[
+<style>
+.quota-wrap table{width:100%;border-collapse:collapse;background:#fff;font-size:13px;margin:10px 0}
+.quota-wrap th,.quota-wrap td{border:1px solid #e5e7eb;padding:8px 10px;text-align:left;vertical-align:top}
+.quota-wrap th{background:#111;color:#fff}
+.quota-wrap code{background:#eef0f3;padding:1px 6px;border-radius:4px;font-size:12px;word-break:break-all}
+.quota-wrap .tag{display:inline-block;color:#fff;font-size:11px;border-radius:20px;padding:1px 10px;margin-right:6px;white-space:nowrap}
+.quota-wrap .free{background:#10b981}.quota-wrap .paid{background:#f59e0b}.quota-wrap .freemium{background:#3b82f6}
+.quota-wrap .table-scroll{overflow-x:auto}
+</style>
+
+<div class="quota-wrap">
+
+<p>各家 Agent 产品和 API 渠道的免费额度一览。<strong>价格随时会变，以官网为准</strong>，这里只记录调研时的快照。</p>
+
+<h2>1. Agent 产品总表</h2>
+<div class="table-scroll">
+<table>
+<tr><th>Agent</th><th>厂商</th><th>形态</th><th>免费/付费</th><th>额度与价格</th><th>CLI</th><th>herdr</th><th>Link</th></tr>
+<tr><td>OpenCode</td><td>OpenCode</td><td>CLI</td><td><span class="tag freemium">Freemium</span></td><td>Go $10/月，Go Plus $40/月。Zen 按量付费，另有限时免费模型</td><td>是</td><td>是</td><td><a class="link"   href="https://opencode.ai" >opencode.ai<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+<tr><td>Claude Code</td><td>Anthropic</td><td>CLI</td><td><span class="tag freemium">Freemium</span></td><td>约 50 credits/5小时重置，单次 agent 约 30 credits</td><td>是</td><td>是</td><td><a class="link"   href="https://claude.com/product/claude-code" >claude.com<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+<tr><td>Gemini CLI (Antigravity)</td><td>Google</td><td>CLI</td><td><span class="tag free">免费</span></td><td>约 60 req/min，1M 上下文，无月总量。需 Google 账号或 Gemini API key</td><td>是</td><td>是</td><td><a class="link"   href="https://antigravity.google/docs/cli/install" >antigravity.google<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+<tr><td>GitHub Copilot</td><td>GitHub/Microsoft</td><td>IDE 插件 + CLI</td><td><span class="tag freemium">Freemium</span></td><td>Free：2000 completions/月 + 约 50 premium/chat/月</td><td>否</td><td>是</td><td><a class="link"   href="https://github.com/features/copilot" >github.com/copilot<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+<tr><td>Cursor</td><td>Anysphere</td><td>IDE</td><td><span class="tag freemium">Freemium</span></td><td>Hobby：限量 agent + 限量 tab，无需绑卡</td><td>否</td><td>是</td><td><a class="link"   href="https://cursor.com" >cursor.com<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+<tr><td>Windsurf</td><td>Windsurf</td><td>IDE</td><td><span class="tag freemium">Freemium</span></td><td>Free：无限基础补全 + 限量 Cascade agent（5小时重置）</td><td>否</td><td>否</td><td><a class="link"   href="https://windsurf.com" >windsurf.com<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+<tr><td>OpenAI Codex</td><td>OpenAI</td><td>CLI</td><td><span class="tag freemium">Freemium</span></td><td>约 50 agent turns/天 + 10 code review/天，仅 GPT-5.1 Mini</td><td>是</td><td>是</td><td><a class="link"   href="https://openai.com/codex" >openai.com/codex<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+<tr><td>Bolt.new</td><td>StackBlitz</td><td>Web</td><td><span class="tag freemium">Freemium</span></td><td>约 300K/天，1M tokens/月</td><td>否</td><td>否</td><td><a class="link"   href="https://bolt.new" >bolt.new<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+<tr><td>Amazon Q Developer</td><td>Amazon</td><td>IDE 插件</td><td><span class="tag freemium">Freemium</span></td><td>约 50 chats/月</td><td>否</td><td>否</td><td><a class="link"   href="https://aws.amazon.com/q/developer/" >aws.amazon.com/q<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+<tr><td>Cline</td><td>Cline</td><td>CLI/IDE</td><td><span class="tag free">免费</span></td><td>软件开源免费，自带 API Key 即用</td><td>是</td><td>是</td><td><a class="link"   href="https://cline.bot" >cline.bot<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+<tr><td>Aider</td><td>Aider</td><td>CLI</td><td><span class="tag free">免费</span></td><td>软件开源免费，自带 API Key 即用</td><td>是</td><td>否</td><td><a class="link"   href="https://aider.chat" >aider.chat<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+<tr><td>Kimi Code</td><td>Moonshot AI</td><td>CLI/IDE</td><td><span class="tag paid">付费</span></td><td>Kimi 会员四档：¥49/月（Agent约30个）、¥99/月（约60个）、¥199/月（约150个）、¥699/月（约360个）。Kimi Code 另有 5小时/周限额</td><td>是</td><td>是</td><td><a class="link"   href="https://www.kimi.com/code" >kimi.com/code<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+<tr><td>ZCode</td><td>智谱 AI</td><td>桌面端</td><td><span class="tag freemium">Freemium</span></td><td>工具免费，新用户 5 天免费体验（每天 300万 GLM-5.3 + 200万 GLM-5-Turbo Token）。之后需付费套餐</td><td>否</td><td>否</td><td><a class="link"   href="https://zcode.z.ai" >zcode.z.ai<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+</table>
+</div>
+
+<h2>2. API 渠道总表</h2>
+<div class="table-scroll">
+<table>
+<tr><th>渠道</th><th>免费/付费</th><th>免费形态</th><th>付费形态</th><th>Base URL</th><th>Link</th></tr>
+<tr><td>OpenRouter</td><td><span class="tag freemium">Freemium</span></td><td>:free 模型 50次/天；买过≥$10 credits 则 1000次/天，20 RPM</td><td>按量付费，聚合多家模型</td><td><code>https://openrouter.ai/api/v1</code></td><td><a class="link"   href="https://openrouter.ai" >openrouter.ai<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+<tr><td>Google AI Studio (Gemini)</td><td><span class="tag free">免费</span></td><td>永久限速免费，gemini-2.5-flash 约 30 RPM/1440次/天；免信用卡</td><td>按量付费</td><td><code>https://generativelanguage.googleapis.com/v1beta/openai</code></td><td><a class="link"   href="https://aistudio.google.com" >aistudio.google.com<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+<tr><td>Groq</td><td><span class="tag free">免费</span></td><td>永久限速免费，约 30 RPM/天约 1.4万次（分模型），LPU 极快；免信用卡</td><td>按量付费</td><td>OpenAI 兼容</td><td><a class="link"   href="https://groq.com" >groq.com<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+<tr><td>硅基流动 SiliconFlow</td><td><span class="tag freemium">Freemium</span></td><td>实名送 16 元券 180 天 + 部分小模型免费档（约 1000 RPM/模型）</td><td>按量付费，聚合 DeepSeek/Qwen/GLM/Kimi</td><td><code>https://api.siliconflow.cn/v1</code></td><td><a class="link"   href="https://siliconflow.cn" >siliconflow.cn<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+<tr><td>智谱 GLM</td><td><span class="tag freemium">Freemium</span></td><td>新用户 2000 万 Token；GLM-4-Flash / GLM-4.7-Flash 长期免费，免费并发仅 1</td><td>按量付费，Coding Plan 套餐</td><td><code>https://open.bigmodel.cn/api/paas/v4/</code></td><td><a class="link"   href="https://open.bigmodel.cn" >open.bigmodel.cn<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+<tr><td>DeepSeek 官 API</td><td><span class="tag freemium">Freemium</span></td><td>新用户约 100-500 万 Token，约 30 天过期；V4-Flash 闲时半价</td><td>按量付费，缓存命中极便宜</td><td><code>https://api.deepseek.com</code></td><td><a class="link"   href="https://api.deepseek.com" >api.deepseek.com<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+<tr><td>Kimi (Moonshot)</td><td><span class="tag freemium">Freemium</span></td><td>实名后约 15 元代金券；K2.6 256K / K3 1M 上下文</td><td>按量付费</td><td><code>https://api.moonshot.cn/v1</code></td><td><a class="link"   href="https://platform.moonshot.cn" >platform.moonshot.cn<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+<tr><td>阿里百炼</td><td><span class="tag freemium">Freemium</span></td><td>每模型 100 万 Token，90 天，需绑阿里云账号</td><td>按量付费</td><td><code>https://dashscope.aliyuncs.com/compatible-mode/v1</code></td><td><a class="link"   href="https://bailian.console.aliyun.com" >bailian.console.aliyun.com<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+<tr><td>火山引擎 Ark</td><td><span class="tag freemium">Freemium</span></td><td>单模型每日最高 500 万 Token，需在模型广场手动开通，过期作废</td><td>按量付费</td><td><code>https://ark.cn-beijing.volces.com/api/v3</code></td><td><a class="link"   href="https://console.volcengine.com/ark" >console.volcengine.com/ark<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+<tr><td>百度千帆</td><td><span class="tag free">免费</span></td><td>ERNIE-Speed-8K 永久免，QPS 上限约 50</td><td>按量付费</td><td><code>https://qianfan.baidubce.com/v2</code></td><td><a class="link"   href="https://qianfan.cloud.baidu.com" >qianfan.cloud.baidu.com<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+<tr><td>腾讯混元</td><td><span class="tag freemium">Freemium</span></td><td>100 万 Token，有效期 1 年</td><td>按量付费</td><td><code>https://api.hunyuan.cloud.tencent.com/v1</code></td><td><a class="link"   href="https://cloud.tencent.com/product/hunyuan" >cloud.tencent.com/hunyuan<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td></tr>
+</table>
+</div>
+
+</div>
+]]></content>
+      <categories>
+        <category>AI 情报</category>
+      </categories>
+      <tags>
+        <tag>Agent</tag>
+        <tag>API</tag>
+        <tag>免费额度</tag>
       </tags>
   </entry>
 </search>
