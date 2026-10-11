@@ -1,3 +1,4 @@
+http://littledai.cn/read/post-training-history.html
 http://littledai.cn/ai-radar/2026-10-02.html
 http://littledai.cn/2026/10/11/%E5%85%8D%E8%B4%B9%E9%A2%9D%E5%BA%A6%E6%8C%87%E5%8D%97/
 http://littledai.cn/bookmarks/index.html
@@ -28,6 +29,11 @@ http://littledai.cn/tags/Agent/
 http://littledai.cn/tags/%E5%86%B3%E7%AD%96%E6%A8%A1%E5%9E%8B/
 http://littledai.cn/tags/3D-%E7%94%9F%E6%88%90/
 http://littledai.cn/tags/Unity/
+http://littledai.cn/tags/Post-Training/
+http://littledai.cn/tags/SFT/
+http://littledai.cn/tags/RLHF/
+http://littledai.cn/tags/PPO/
+http://littledai.cn/tags/%E7%B2%BE%E8%AF%BB/
 http://littledai.cn/tags/API/
 http://littledai.cn/tags/%E5%85%8D%E8%B4%B9%E9%A2%9D%E5%BA%A6/
 http://littledai.cn/categories/%E6%9D%82%E6%96%87/
