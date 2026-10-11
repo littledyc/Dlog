@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://littledai.cn/ai-radar/2026-10-02.html</loc>
+    
+    <lastmod>2026-10-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://littledai.cn/2026/10/11/%E5%85%8D%E8%B4%B9%E9%A2%9D%E5%BA%A6%E6%8C%87%E5%8D%97/</loc>
     
     <lastmod>2026-10-11</lastmod>
@@ -216,6 +225,27 @@
   
   <url>
     <loc>http://littledai.cn/tags/Agent/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://littledai.cn/tags/%E5%86%B3%E7%AD%96%E6%A8%A1%E5%9E%8B/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://littledai.cn/tags/3D-%E7%94%9F%E6%88%90/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://littledai.cn/tags/Unity/</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
