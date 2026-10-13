@@ -137,7 +137,7 @@
       </tags>
   </entry>
   <entry>
-    <title>碎语｜写在博客的开始</title>
+    <title>随想｜写在博客的开始</title>
     <url>/2023/06/13/%E5%9C%A8%E7%9F%AD%E8%A7%86%E9%A2%91%E6%97%B6%E4%BB%A3%E5%86%99%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p>“将军百战声名裂 向河梁 回头万里 故人长绝”</p>
 <h3 id="为什么要开始写博客？"><a href="#为什么要开始写博客？" class="headerlink" title="为什么要开始写博客？"></a>为什么要开始写博客？</h3><p>作为一个04年出生的小孩，第一次知道博客是因为想看黄执中的《洛阳集》，但当我打开网易博客时发现他已经停运了，在移动互联网时代再去搭建一个网站显得费时费力，我完全可以在知乎，b站上分享日常，甚至用QQ和微信。但博客这个东西似乎对我有什么奇妙的吸引力，让我用了将近三天的时间搭建，在反反复复的error里坚持了下来，我觉得他更像是我的一个作品，而不是单纯的网站，创造某样东西所带来的快乐和成就感绝不是机械的学习和模仿能比的，也不需要考试来证明。如果你非要说我们这代人少点什么东西，可能是想象力和创造力。我们这代人  好像总在指出问题，却没有想要解决问题。我高中的时候也爱写东西，也思考学校、教育的意义，那时候的文字抽象却感情饱满，如果这个博客真能让我找到高中纯粹的感觉，也算是有用了吧……</p>
@@ -151,11 +151,11 @@
 <h3 id="满座衣冠似雪"><a href="#满座衣冠似雪" class="headerlink" title="满座衣冠似雪"></a>满座衣冠似雪</h3><p><a href="/files/%E6%BB%A1%E5%BA%A7%E8%A1%A3%E5%86%A0%E4%BC%BC%E9%9B%AA.pdf">下载附件：满座衣冠似雪 PDF</a></p>
 ]]></content>
       <categories>
-        <category>碎语</category>
+        <category>随想</category>
       </categories>
   </entry>
   <entry>
-    <title>攻略｜大语言模型使用指北</title>
+    <title>指北｜大语言模型使用指北</title>
     <url>/2023/11/30/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E6%B5%8B%E8%AF%84%E5%8F%8A%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
     <content><![CDATA[<h2 id="使用指南（以Chatgpt为例）"><a href="#使用指南（以Chatgpt为例）" class="headerlink" title="使用指南（以Chatgpt为例）"></a>使用指南（以Chatgpt为例）</h2><h3 id="一、科学上网"><a href="#一、科学上网" class="headerlink" title="一、科学上网"></a>一、科学上网</h3><p>Chatgpt对于很多国家都是封锁的，国内有很多镜像网址或者套皮的微信小程序，在严格的监管下被封了挺多，我不推荐大家用是因为不仅要收费，速度还慢（不如用我国自主研发的文心一言），而且直接登录openai的官网可以了解一些新的动态，所以这边直接给大家上链接：<br> <a class="link"   href="https://f001.backblazeb2.com/file/geph4-dl/geph-releases/dl.html" >迷雾通<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a><br>这里的梯子也是我自己一直在用的迷雾通，它有免费和付费版，看视频需要速度快一点的付费版，如果你有国外的信用卡大概是一天一元，微信和支付宝要多15%的手续费。<br><figure class="image-caption"><img  
                      lazyload
@@ -188,7 +188,7 @@
                 ><figcaption>plam2.png</figcaption></figure></p>
 ]]></content>
       <categories>
-        <category>攻略</category>
+        <category>指北</category>
       </categories>
       <tags>
         <tag>AI</tag>
@@ -250,7 +250,7 @@
       </tags>
   </entry>
   <entry>
-    <title>索引 | 研究方向</title>
+    <title>辑录 | 研究方向</title>
     <url>/2026/10/11/%E7%A0%94%E7%A9%B6%E7%94%9F%E7%A0%94%E7%A9%B6%E6%96%B9%E5%90%91%E8%B7%9F%E8%B8%AA/</url>
     <content><![CDATA[<ul>
 <li><a href="/read/decision-model-history.html">精读｜从词袋分类器到 Jev：决策模型的发展脉络</a></li>
@@ -261,7 +261,7 @@
 </ul>
 ]]></content>
       <categories>
-        <category>索引</category>
+        <category>辑录</category>
       </categories>
       <tags>
         <tag>研究方向</tag>
@@ -2210,7 +2210,7 @@
       </tags>
   </entry>
   <entry>
-    <title>碎语｜2022年末总结</title>
+    <title>随想｜2022年末总结</title>
     <url>/2022/12/31/%E7%A2%8E%E8%AF%AD%EF%BD%9C12.31%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/</url>
     <content><![CDATA[<h2 id="Blog-12-8"><a href="#Blog-12-8" class="headerlink" title="Blog 12.8"></a>Blog 12.8</h2><p>正是在社交赛结束的前几个小时，有了写博客的想法，但远古的新浪博客和网易博客已经停止运营，那个时代的记忆终究只属于那个时代，互联网的记忆说长不长，说短不短，因为一个热点话题能很快被另一个热点所取代，但人们在网上留下的一切，却可以保留的很久很久，很多程序员有个人博客，但是我的技术力太弱，只好选择知乎。写博客一定是一件浪漫的事，它好像意味着一个人可以完全的和自己对话，可以向内出发，找寻自己。而要避免无病呻吟，最好的办法是给自己找点话题。</p>
 <p>社交赛，这是一个我最开始抱有很大期待，中间有过失望，最后又被温暖的经历。最后一轮是对之前所有经历的复盘，这真的很戳人啊，如果我们完成某件意义重大的事之后，当时的人还会陪着你聊聊心路历程，就像在生命结束前，脑海里浮现一生的剪影。我在这场比赛中没有那么爱算计，感觉反而收获了游戏本身纯真的快乐，一群人聚在一起，随便扯扯的那种快乐。而结束这场比赛，和结束高考一样既开心又落寞，一切一切的感慨来自于再也没有一个好的理由能再将这群人聚在一起，来自于有时候突然的回想起那段时光，发现逝去真的是一件无法阻止的事</p>
@@ -2230,7 +2230,7 @@
 <p>专家说，这是最后一个寒冬了，他们总在给我们熬下去找理由，我们也总不买单。可是呢，跨年的另外一层意义就在于，它逼迫着你向前看，无论你怎么说这一年有多烂，可它终究要离开。我不敢说春天一定会来的盛大，但我愿意相信春寒料峭不是冬的延续，而是春的开始，我一直相信</p>
 ]]></content>
       <categories>
-        <category>碎语</category>
+        <category>随想</category>
       </categories>
       <tags>
         <tag>大学</tag>
@@ -2242,7 +2242,7 @@
       </tags>
   </entry>
   <entry>
-    <title>碎语｜一份高考祝福</title>
+    <title>随想｜高考祝福</title>
     <url>/2023/06/07/%E7%A2%8E%E8%AF%AD%EF%BD%9C%E4%B8%80%E4%BB%BD%E9%AB%98%E8%80%83%E7%A5%9D%E7%A6%8F/</url>
     <content><![CDATA[<p>这将是一份你从未见过的高考祝福，来自江苏省南通第一中学22届一名普通的考生。（夹杂极多私货，主观色彩巨浓，且为群发，谨慎食用）</p>
 <p>在高三的最后一个月，我曾想采访班上每一个同学，并在十年后把采访的视频发给他们，而采访的问题是：想象一下，十年后你会在哪？一开始我觉得这实在是太浪漫的一件事。但或许是最后那段时间的课业压力太大，又或许是我举起相机的勇气还不够，这个问题最终只传到了我的好朋友那里，而他给出的答案是：不知道。后来我想，十年太长，甚至一年都太长</p>
@@ -2253,7 +2253,7 @@
 <p>高铁已经到达上海虹桥站，是时候下车了，祝福你们，有缘上海见！</p>
 ]]></content>
       <categories>
-        <category>碎语</category>
+        <category>随想</category>
       </categories>
       <tags>
         <tag>高中</tag>
@@ -2289,12 +2289,12 @@
       </tags>
   </entry>
   <entry>
-    <title>碎语｜2023年末总结</title>
+    <title>随想｜2023年末总结</title>
     <url>/2023/12/31/%E7%A2%8E%E8%AF%AD%EF%BD%9C2023%E5%B9%B4%E6%9C%AB%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<p>反年终总结<br>如果不看手机里APP的年度报告，如果不用统计数据，你该怎么总结2023<br>如果只回忆瞬间，你会想起几个</p>
 ]]></content>
       <categories>
-        <category>碎语</category>
+        <category>随想</category>
       </categories>
       <tags>
         <tag>年末总结</tag>
@@ -2327,7 +2327,7 @@
       </tags>
   </entry>
   <entry>
-    <title>收录 | 辩行记全集</title>
+    <title>辑录 | 辩行记全集</title>
     <url>/2022/09/30/%E8%BE%A9%E8%A1%8C%E8%AE%B0%E5%85%A8%E9%9B%86/</url>
     <content><![CDATA[<blockquote>
 <p>根据《辩行记全集.docx》整理，发布时间暂记为 2022 年 9 月（具体日期未确认）。原稿收录 126 篇，未见第 67、83、103、109 篇；下文按编号排列，保留正文，仅统一章节标题和排版。</p>
@@ -4261,7 +4261,7 @@
 <p>人设，其实是由不得人的。</p>
 ]]></content>
       <categories>
-        <category>收录</category>
+        <category>辑录</category>
       </categories>
       <tags>
         <tag>辩论</tag>
